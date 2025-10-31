@@ -25,9 +25,9 @@ async function connectDB() {
     await client.connect();
     const database = client.db("eventDB");
     bookingsCollection = database.collection("bookings");
-    console.log("✅ Connected to MongoDB Atlas!");
+    console.log(" Connected to MongoDB Atlas!");
   } catch (error) {
-    console.error("❌ MongoDB connection failed:", error);
+    console.error(" MongoDB connection failed:", error);
   }
 }
 connectDB();
@@ -58,7 +58,7 @@ app.post('/api/bookings', async (request, response) => {
   try {
     const result = await bookingsCollection.insertOne(newBooking);
     response.status(201).json({
-      message: "✅ Booking created successfully!",
+      message: " Booking created successfully!",
       booking: newBooking,
       id: result.insertedId
     });
@@ -84,7 +84,7 @@ app.put('/api/bookings/:id', async (request, response) => {
     const id = new ObjectId(request.params.id);
     const updated = await bookingsCollection.updateOne({ _id: id }, { $set: request.body });
     if (updated.matchedCount === 0) return response.status(404).json({ message: "Booking not found" });
-    response.status(200).json({ message: "✅ Booking updated successfully!" });
+    response.status(200).json({ message: " Booking updated successfully!" });
   } catch {
     response.status(400).json({ message: "Invalid ID format" });
   }
@@ -96,7 +96,7 @@ app.delete('/api/bookings/:id', async (request, response) => {
     const id = new ObjectId(request.params.id);
     const deleted = await bookingsCollection.deleteOne({ _id: id });
     if (deleted.deletedCount === 0) return response.status(404).json({ message: "Booking not found" });
-    response.status(200).json({ message: "🗑️ Booking deleted successfully!" });
+    response.status(200).json({ message: " Booking deleted successfully!" });
   } catch {
     response.status(400).json({ message: "Invalid ID format" });
   }
@@ -125,5 +125,5 @@ app.get('/api/bookings/filter', async (request, response) => {
 });
 
 app.listen(3000, () => {
-  console.log("🚀 Server running on http://localhost:3000");
+  console.log(" Server running on http://localhost:3000");
 });
