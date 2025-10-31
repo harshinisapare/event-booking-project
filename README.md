@@ -1,21 +1,21 @@
 🎟️ Synergia Event Booking API
 A simple Node.js + Express API connected to MongoDB for managing event bookings for Synergia 2025.
 
-🚀 Features
+#🚀 Features
 Connects Node.js and Express to MongoDB
 Performs CRUD operations (Create, Read, Update, Delete)
 Includes Search and Filter queries
 Follows REST API standards
 Uses proper HTTP status codes
-### 🧩 API Endpoints
-## Method	Endpoint	Description
-# GET	/api/bookings	Get all bookings
-# POST	/api/bookings	Create a new booking
-# GET	/api/bookings/:id	Get booking by ID
-# PUT	/api/bookings/:id	Update booking details
-# DELETE	/api/bookings/:id	Delete a booking
-# GET	/api/bookings/search?email=xyz	Search booking by email
-# GET	/api/bookings/filter?event=Synergia	Filter bookings by event name
+# 🧩 API Endpoints
+### Method	Endpoint	Description
+### GET	/api/bookings	Get all bookings
+### POST	/api/bookings	Create a new booking
+### GET	/api/bookings/:id	Get booking by ID
+### PUT	/api/bookings/:id	Update booking details
+### DELETE	/api/bookings/:id	Delete a booking
+### GET	/api/bookings/search?email=xyz	Search booking by email
+### GET	/api/bookings/filter?event=Synergia	Filter bookings by event name
 
 ### ⚙️ Setup Instructions
 1️⃣ Clone the repository
@@ -38,4 +38,4 @@ URL: http://localhost:3000/api/bookings
 
 Body (JSON): { "name": "Harshini", "email": "harshini@gmail.com", "event": "Synergia 2025", "ticketType": "VIP" }
 
-✅ All APIs tested successfully using Postman and stored data verified in MongoDB
+##✅ All APIs tested successfully using Postman and stored data verified in MongoDB
