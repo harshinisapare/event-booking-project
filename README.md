@@ -7,15 +7,15 @@ Performs CRUD operations (Create, Read, Update, Delete)
 Includes Search and Filter queries
 Follows REST API standards
 Uses proper HTTP status codes
-🧩 API Endpoints
-Method	Endpoint	Description
-GET	/api/bookings	Get all bookings
-POST	/api/bookings	Create a new booking
-GET	/api/bookings/:id	Get booking by ID
-PUT	/api/bookings/:id	Update booking details
-DELETE	/api/bookings/:id	Delete a booking
-GET	/api/bookings/search?email=xyz	Search booking by email
-GET	/api/bookings/filter?event=Synergia	Filter bookings by event name
+### 🧩 API Endpoints
+# Method	Endpoint	Description
+# GET	/api/bookings	Get all bookings
+# POST	/api/bookings	Create a new booking
+# GET	/api/bookings/:id	Get booking by ID
+# PUT	/api/bookings/:id	Update booking details
+# DELETE	/api/bookings/:id	Delete a booking
+# GET	/api/bookings/search?email=xyz	Search booking by email
+# GET	/api/bookings/filter?event=Synergia	Filter bookings by event name
 
 ### ⚙️ Setup Instructions
 1️⃣ Clone the repository
