@@ -8,7 +8,7 @@ Includes Search and Filter queries
 Follows REST API standards
 Uses proper HTTP status codes
 ### 🧩 API Endpoints
-# Method	Endpoint	Description
+## Method	Endpoint	Description
 # GET	/api/bookings	Get all bookings
 # POST	/api/bookings	Create a new booking
 # GET	/api/bookings/:id	Get booking by ID
