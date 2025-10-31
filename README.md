@@ -16,7 +16,8 @@ PUT	/api/bookings/:id	Update booking details
 DELETE	/api/bookings/:id	Delete a booking
 GET	/api/bookings/search?email=xyz	Search booking by email
 GET	/api/bookings/filter?event=Synergia	Filter bookings by event name
-⚙️ Setup Instructions
+
+### ⚙️ Setup Instructions
 1️⃣ Clone the repository
 git clone https://github.com/harshinisapare/project-api-bookings.git cd project-api-bookings
 
